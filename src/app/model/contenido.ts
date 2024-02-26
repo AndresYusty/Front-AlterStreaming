@@ -6,5 +6,6 @@ export class Contenido {
     public nombre!: String;
     public tipo!: String;
     public genero!: Genero;
+    public puntuaciones!: number;
 
 }

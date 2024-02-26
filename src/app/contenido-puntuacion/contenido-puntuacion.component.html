@@ -1,0 +1,13 @@
+<h2 mat-dialog-title>¿Qué puntuación le das al contenido (1-5)?</h2>
+<mat-dialog-content>   
+    <form [formGroup]="formPuntuacion">
+        <mat-form-field>
+            <mat-label>Puntuación</mat-label>
+            <input matInput formControlName="puntuaciones" type="number" id="puntuaciones" name="puntuacion" style="width: 170px;" min="1" max="5">
+        </mat-form-field>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button class="btn btn-primary mt-3" >Puntuar</button>
+    <button class="btn btn-secondary mt-3" mat-dialog-close>Cancelar</button>
+</mat-dialog-actions>

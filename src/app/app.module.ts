@@ -13,6 +13,9 @@ import { MatInputModule } from '@angular/material/input';
 import { LoginComponent } from './login/login.component';
 import { AuthInterceptor } from './interceptors/auth-interceptor';
 import { ContenidoComponent } from './contenido/contenido.component';
+import { ContenidoAleatorioComponent } from './contenido-aleatorio/contenido-aleatorio.component';
+import { ContenidoPuntuacionComponent } from './contenido-puntuacion/contenido-puntuacion.component';
+
 
 
 
@@ -24,6 +27,8 @@ import { ContenidoComponent } from './contenido/contenido.component';
 
     LoginComponent,
      ContenidoComponent,
+     ContenidoAleatorioComponent,
+     ContenidoPuntuacionComponent,
   
 
 

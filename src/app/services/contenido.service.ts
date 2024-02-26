@@ -34,4 +34,21 @@ export class ContenidoService {
     return this.http.get<Contenido[]>(`${this.path}/contenido-genero?idGenero=${idGenero}`);
   }
 
+  public getRandomMovie(): Observable<Contenido[]> {
+    return this.http.get<Contenido[]>(`${this.path}/random-movie`);
+  }
+
+  puntuarContenido(contenido: Contenido): Observable<Contenido> {
+    return this.http.post<Contenido>(`${this.path}/puntuar`, contenido);
+  }
+
+  getContenidoById(id: number): Observable<Contenido> {
+    return this.http.get<Contenido>(`${this.path}/${id}`);
+  }
+
+  
+
+
+  
+
 }
